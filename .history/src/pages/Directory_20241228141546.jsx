@@ -11,14 +11,13 @@ import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
 const API__URL = 'http://www.omdbapi.com/?apikey=da77d71e';
 
 const Directory = () => {
-    const [search, setSearch] = useState('The Dark Knight');
+    const [search, setSearch] = useState('Godfather');
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [year, setYear] = useState([1888, 2024]);
     const [page, setPage] = useState(1);
 
     const startSearch = (search) => {
-        setPage(1)
         setLoading(true)
         searchResults(search)
     }
@@ -104,8 +103,8 @@ const Directory = () => {
                         </Button>
                             
                         )}
-                       {movieData.Search?.length > 0 ? ( 
-                        <>
+                       {movieData.Search?.length > 0 ? (<></>) : ( 
+                        
                         <h1 className={styles.page__number}>Page: {page}</h1>
                             <Button 
                             colorPalette="red" 
@@ -114,8 +113,7 @@ const Directory = () => {
                             >
                             Next page <RiArrowRightLine />
                             </Button>
-                        </>
-                            ) : (<></>)}
+                            )}
                     </div>
                 </div>
             </div>

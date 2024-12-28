@@ -6,7 +6,7 @@ const {movieId} = useParams();
     return (
         <h1>
             Movie {movieId} Selected!
-        </h1>
+        </div>
     );
 }
 

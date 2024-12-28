@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom';
 const Selected = () => {
 const {movieId} = useParams();
     return (
-        <h1>
+        <div>
             Movie {movieId} Selected!
-        </h1>
+        </div>
     );
 }
 

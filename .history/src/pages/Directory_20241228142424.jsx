@@ -18,7 +18,7 @@ const Directory = () => {
     const [page, setPage] = useState(1);
 
     const startSearch = (search) => {
-        setPage(1)
+        
         setLoading(true)
         searchResults(search)
     }
