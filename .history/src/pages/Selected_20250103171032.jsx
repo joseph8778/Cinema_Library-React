@@ -14,7 +14,6 @@ const [added, setAdded] = useState(false);
 
 useEffect(() => {
     selectedResults(movieId)
-    console.log(cart)
 }, []);
 
     const selectedResults = async (id) => {
@@ -90,7 +89,6 @@ useEffect(() => {
                             variant='solid'
                             onClick={() =>{ 
                                  setAdded(true)
-                                 
                                 setCart((prevCart) =>  [...prevCart, {movie, quantity: 1, price: price}])
                             
                             }}

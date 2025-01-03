@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import { Link, useParams } from 'react-router-dom';
 
-const Selected = ({setCart, cart}) => {
+const Selected = ({setCart}) => {
 const {movieId} = useParams();
 const [movie, setMovie] = useState(null);
 const [price, setPrice] = useState();
@@ -14,7 +14,7 @@ const [added, setAdded] = useState(false);
 
 useEffect(() => {
     selectedResults(movieId)
-    console.log(cart)
+    console.log(setCart)
 }, []);
 
     const selectedResults = async (id) => {
@@ -90,7 +90,6 @@ useEffect(() => {
                             variant='solid'
                             onClick={() =>{ 
                                  setAdded(true)
-                                 
                                 setCart((prevCart) =>  [...prevCart, {movie, quantity: 1, price: price}])
                             
                             }}

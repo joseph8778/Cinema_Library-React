@@ -90,7 +90,6 @@ useEffect(() => {
                             variant='solid'
                             onClick={() =>{ 
                                  setAdded(true)
-                                 
                                 setCart((prevCart) =>  [...prevCart, {movie, quantity: 1, price: price}])
                             
                             }}
