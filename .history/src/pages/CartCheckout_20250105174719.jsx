@@ -59,10 +59,7 @@ useEffect(() => {
                             />
                         ))
                         ) : (
-                            <div className="emptyCart__container">
-                                <img src={cartEmpty} alt="" width='50%' height='50%' />
-                                <div className='emptyCart-text'>Your cart is empty</div>
-                            </div>
+                            <img src={cartEmpty} alt="" width='1000px' height='1000px' />
                         )}
 
 

@@ -3,7 +3,6 @@ import { Button } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { RiArrowLeftLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-import cartEmpty from '../assets/empty-cart.png'
 
 const CartCheckout = ({cart, setCart, setTotalQuant}) => { 
     const [subTotal, setSubTotal] = useState(0);
@@ -59,10 +58,7 @@ useEffect(() => {
                             />
                         ))
                         ) : (
-                            <div className="emptyCart__container">
-                                <img src={cartEmpty} alt="" width='50%' height='50%' />
-                                <div className='emptyCart-text'>Your cart is empty</div>
-                            </div>
+                            <img src='/assets/logo.svg' alt="" width='1000px' height='1000px' />
                         )}
 
 
