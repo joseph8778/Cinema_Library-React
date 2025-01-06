@@ -31,6 +31,14 @@ useEffect(() => {
         <div className="checkout">
             <div className="container">
                 <div className="row">
+            <Link to="/search">
+                            <Button 
+                            colorPalette="red" 
+                            variant="solid"
+                            >
+                            <RiArrowLeftLine /> Movies
+                            </Button>
+            </Link>
                     <div className="cart__title">
                         <h1>Cart</h1>
                     </div>
@@ -52,7 +60,7 @@ useEffect(() => {
                         ))
                         ) : (
                             <div className="emptyCart__container">
-                                <img src={cartEmpty} alt="" width='40%' height='40%' />
+                                <img src={cartEmpty} alt="" width='40%' height='50%' />
                                 <div className='emptyCart-text'>Your cart is empty</div>
                             </div>
                         )}

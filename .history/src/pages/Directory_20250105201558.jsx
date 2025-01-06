@@ -17,15 +17,15 @@ const Directory = ({search, toggleSearch}) => {
     const [year, setYear] = useState([1888, 2024]);
     const [page, setPage] = useState(1);
 
-    useEffect(() => {
-        startSearch();
-    }, [toggleSearch]);
-
+    
     const startSearch = (search) => {
         setPage(1)
         setLoading(true)
         searchResults(search)
     }
+useEffect(() => {
+    startSearch();
+}, [toggleSearch]);
 
     const searchResults = async (title) => {
         const response = await fetch(`${API__URL}&s=${title}&page=${page}`)

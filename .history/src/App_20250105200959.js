@@ -35,12 +35,12 @@ function AppContent() {
 
   return (
     <div className={showBackground ? "background_container" : ''}>
-    <Nav quantity={totalCartQuant} setSearch={setSearch} setToggleSearch={setToggleSearch}/>
+    <Nav quantity={totalCartQuant} setSearch={setSearch} setToggleSearch={setToggleSearch/>
       <div className="App">
         <Routes>
           <Route path='/' element={<Home className="home_page" />} />
           <Route path='/signin' element={<Signin />} />
-          <Route path='/search' element={<Directory search={search} toggleSearch={toggleSearch} />} />
+          <Route path='/search' element={<Directory search={search} />} />
           <Route path='/movie/:movieId' element={<Selected cart={cartValue} setCart={setCartValue} />} />
           <Route path='/cart' element={<CartCheckout cart={cartValue} setCart={setCartValue} setTotalQuant={setTotalCartQuant} />} />
         </Routes>

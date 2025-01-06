@@ -7,7 +7,7 @@ import { Avatar } from "./ui/avatar"
 import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
 import { Box, Button } from '@chakra-ui/react';
 
-const Nav = ({quantity, setSearch, setToggleSearch}) => {
+const Nav = ({quantity}) => {
   const [user, setUser] = useState(null)
   const [showMenu, setShowMenu] = useState(false)
   const menuRef = useRef(null)
@@ -58,34 +58,11 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                   <Button 
                   colorPalette="red" 
                   variant='plain'
-                  fontWeight="1000"
-                  marginLeft="12px"
+                  fontWeight="600"
                   >
                    Movies
                   </Button>
               </Link>
-
-                
-              <div className="searchbar__wrapper">
-                        <div className={'searc'}>
-                        <input 
-                        type="search" 
-                        className={'search__input'}
-                        placeholder='Search your favorites!'
-                        aria-label='Search'
-                        onChange={(event) => {setSearch(event.target.value)}}
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
-                                {setToggleSearch((prev) => !prev)}
-                            }
-                        }}
-                        />
-                        <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
-                        
-                        ></i>
-                        </div>
-                    </div>
               </div>
 
               

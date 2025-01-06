@@ -40,7 +40,7 @@ function AppContent() {
         <Routes>
           <Route path='/' element={<Home className="home_page" />} />
           <Route path='/signin' element={<Signin />} />
-          <Route path='/search' element={<Directory search={search} toggleSearch={toggleSearch} />} />
+          <Route path='/search' element={<Directory search={search} toggleSearch />} />
           <Route path='/movie/:movieId' element={<Selected cart={cartValue} setCart={setCartValue} />} />
           <Route path='/cart' element={<CartCheckout cart={cartValue} setCart={setCartValue} setTotalQuant={setTotalCartQuant} />} />
         </Routes>

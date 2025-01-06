@@ -76,12 +76,12 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                         onChange={(event) => {setSearch(event.target.value)}}
                         onKeyDown={(e) => {
                             if (e.key === 'Enter') {
-                                {setToggleSearch((prev) => !prev)}
+                                {toggleSearch((prev) => !prev)}
                             }
                         }}
                         />
                         <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
+                        onClick={() => {toggleSearch((prev) => !prev)}}
                         
                         ></i>
                         </div>

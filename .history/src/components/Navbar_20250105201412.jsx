@@ -81,7 +81,7 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                         }}
                         />
                         <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
+                        onClick={() => {toggleSearch((prev) => !prev)}}
                         
                         ></i>
                         </div>

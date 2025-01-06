@@ -10,17 +10,18 @@ import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
 
 const API__URL = 'http://www.omdbapi.com/?apikey=da77d71e';
 
-const Directory = ({search, toggleSearch}) => {
+const Directory = ({search}) => {
 
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [year, setYear] = useState([1888, 2024]);
     const [page, setPage] = useState(1);
-
-    useEffect(() => {
-        startSearch();
-    }, [toggleSearch]);
-
+useEffect(() => {
+    
+    return () => {
+        
+    };
+}, []);
     const startSearch = (search) => {
         setPage(1)
         setLoading(true)

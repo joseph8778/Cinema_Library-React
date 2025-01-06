@@ -26,7 +26,7 @@ function AppContent() {
   const [cartValue, setCartValue] = useState([]);
   const [totalCartQuant, setTotalCartQuant] = useState(0); // Initialized to 0
   const [search, setSearch] = useState('The Dark Knight');
-  const [toggleSearch, setToggleSearch] = useState(false);
+  const [toggleSearch, setToggleSearch] = useState();
 
   useEffect(() => {
     const totalQuant = cartValue.reduce((acc, item) => acc + item.quantity, 0);
@@ -35,12 +35,12 @@ function AppContent() {
 
   return (
     <div className={showBackground ? "background_container" : ''}>
-    <Nav quantity={totalCartQuant} setSearch={setSearch} setToggleSearch={setToggleSearch}/>
+    <Nav quantity={totalCartQuant} setSearch={setSearch} />
       <div className="App">
         <Routes>
           <Route path='/' element={<Home className="home_page" />} />
           <Route path='/signin' element={<Signin />} />
-          <Route path='/search' element={<Directory search={search} toggleSearch={toggleSearch} />} />
+          <Route path='/search' element={<Directory search={search} />} />
           <Route path='/movie/:movieId' element={<Selected cart={cartValue} setCart={setCartValue} />} />
           <Route path='/cart' element={<CartCheckout cart={cartValue} setCart={setCartValue} setTotalQuant={setTotalCartQuant} />} />
         </Routes>

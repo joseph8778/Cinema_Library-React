@@ -65,27 +65,7 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                   </Button>
               </Link>
 
-                
-              <div className="searchbar__wrapper">
-                        <div className={'searc'}>
-                        <input 
-                        type="search" 
-                        className={'search__input'}
-                        placeholder='Search your favorites!'
-                        aria-label='Search'
-                        onChange={(event) => {setSearch(event.target.value)}}
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
-                                {setToggleSearch((prev) => !prev)}
-                            }
-                        }}
-                        />
-                        <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
-                        
-                        ></i>
-                        </div>
-                    </div>
+              
               </div>
 
               

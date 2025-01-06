@@ -67,7 +67,7 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
 
                 
               <div className="searchbar__wrapper">
-                        <div className={'searc'}>
+                        <div className={'searc'>
                         <input 
                         type="search" 
                         className={'search__input'}
@@ -76,12 +76,12 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                         onChange={(event) => {setSearch(event.target.value)}}
                         onKeyDown={(e) => {
                             if (e.key === 'Enter') {
-                                {setToggleSearch((prev) => !prev)}
+                                startSearch(search)
                             }
                         }}
                         />
                         <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
+                        onClick={() => startSearch(search)}
                         
                         ></i>
                         </div>

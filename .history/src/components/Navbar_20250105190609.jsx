@@ -4,10 +4,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from '../firebase/init';
 import { Avatar } from "./ui/avatar"
-import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiArrowRightLine } from 'react-icons/ri';
 import { Box, Button } from '@chakra-ui/react';
 
-const Nav = ({quantity, setSearch, setToggleSearch}) => {
+const Nav = ({quantity}) => {
   const [user, setUser] = useState(null)
   const [showMenu, setShowMenu] = useState(false)
   const menuRef = useRef(null)
@@ -50,42 +50,18 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
         <nav>
           <div className="row">
             <div className="nav_wrapper">
-              <div className="nav__logo--wrapper">
+              <div className="nav__logo__wrapper">
               <Link className='logo__link' to='/'>
               <img src={logo} className='logo_svg' alt="" />
               </Link>
               <Link to="/search">
-                  <Button 
-                  colorPalette="red" 
-                  variant='plain'
-                  fontWeight="1000"
-                  marginLeft="12px"
-                  >
-                   Movies
-                  </Button>
-              </Link>
-
-                
-              <div className="searchbar__wrapper">
-                        <div className={'searc'}>
-                        <input 
-                        type="search" 
-                        className={'search__input'}
-                        placeholder='Search your favorites!'
-                        aria-label='Search'
-                        onChange={(event) => {setSearch(event.target.value)}}
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
-                                {setToggleSearch((prev) => !prev)}
-                            }
-                        }}
-                        />
-                        <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {setToggleSearch((prev) => !prev)}}
-                        
-                        ></i>
-                        </div>
-                    </div>
+                            <Button 
+                            colorPalette="red" 
+                            variant="solid"
+                            >
+                            <RiArrowLeftLine /> Movies
+                            </Button>
+            </Link>
               </div>
 
               
