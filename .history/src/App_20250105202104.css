@@ -70,8 +70,6 @@ nav {
     background-color: transparent;
 }
 
-
-
 .search {
     position: relative;
     min-width: 400px;
@@ -82,6 +80,7 @@ nav {
     align-items: center;
     justify-content: center;
   
+    margin: ;
     padding: 1.5rem 1.75rem;
     border-radius: 3rem;
     background: #1f2123;
@@ -320,6 +319,7 @@ footer{
 .searchbar__wrapper {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .searchbar__container {

@@ -18,7 +18,7 @@ const Directory = ({search, toggleSearch}) => {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
-        startSearch(search);
+        startSearch();
     }, [toggleSearch]);
 
     const startSearch = (search) => {

@@ -65,8 +65,6 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                    Movies
                   </Button>
               </Link>
-              </div>
-
               <div className="searchbar__wrapper">
                         <div className='search'>
                         <input 
@@ -87,6 +85,8 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                         ></i>
                         </div>
                     </div>
+              </div>
+
               
 
               {user ? (

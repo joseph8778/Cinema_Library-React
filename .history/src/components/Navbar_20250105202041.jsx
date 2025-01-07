@@ -50,7 +50,6 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
         <nav>
           <div className="row">
             <div className="nav_wrapper">
-  
               <div className="nav__logo--wrapper">
               <Link className='logo__link' to='/'>
               <img src={logo} className='logo_svg' alt="" />
@@ -65,6 +64,8 @@ const Nav = ({quantity, setSearch, setToggleSearch}) => {
                    Movies
                   </Button>
               </Link>
+
+                
               </div>
 
               <div className="searchbar__wrapper">

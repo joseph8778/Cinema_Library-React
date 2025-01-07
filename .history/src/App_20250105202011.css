@@ -70,8 +70,6 @@ nav {
     background-color: transparent;
 }
 
-
-
 .search {
     position: relative;
     min-width: 400px;
@@ -320,6 +318,7 @@ footer{
 .searchbar__wrapper {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .searchbar__container {
