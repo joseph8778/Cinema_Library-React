@@ -349,41 +349,18 @@ footer{
     scale: .9;
 }
 
-.home__movies--container {
-    display: flex;
-    justify-content: center;
-
-    margin-top: 64px;
-   
-}
-
 .home__movies--wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
-    background-color: rgb(32, 31, 31);
-    border-radius: 15px;
-
     width: 80%;
-    max-width: 1000px; 
-    height: auto;
-    padding: 10px;
 }
 
-.home__movie--card {
-    overflow: hidden;
-    margin: 12px;
-    border-radius: 5px;
-    flex: 1 1 calc(20% - 24px); 
-    max-width: 125px;
-    max-height: 174px; 
-    box-sizing: border-box; 
-}
 
 .home__movie--poster {
-    width: 100%; 
-    height: auto; 
+    width: 150px;
+    height: 200px;
 }
 
 

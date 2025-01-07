@@ -354,7 +354,7 @@ footer{
     justify-content: center;
 
     margin-top: 64px;
-   
+    background-color: darkgray;
 }
 
 .home__movies--wrapper {
@@ -362,10 +362,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
 
-    background-color: rgb(32, 31, 31);
-    border-radius: 15px;
-
-    width: 80%;
+    width: 90%;
     max-width: 1000px; 
     height: auto;
     padding: 10px;
@@ -376,8 +373,7 @@ footer{
     margin: 12px;
     border-radius: 5px;
     flex: 1 1 calc(20% - 24px); 
-    max-width: 125px;
-    max-height: 174px; 
+    max-width: 125px; 
     box-sizing: border-box; 
 }
 

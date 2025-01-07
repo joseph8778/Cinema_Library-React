@@ -46,7 +46,7 @@ const Home = () => {
                                 <img className='home__movie--poster' src="https://lh4.googleusercontent.com/proxy/I4gierj6yMIjBy5O01cAK7pAmjXvn0kQY938aTn8T7SMWx3uecU_khgjX-ZjCJJTFWO48Ac-FpBtX0WU3NgZrXVSR7UhiLOydI71eGJQ-rI" alt="" />
                             </div>
                             <div className="home__movie--card">
-                                <img className='home__movie--poster' src="https://images.squarespace-cdn.com/content/v1/5a7f41ad8fd4d236a4ad76d0/1669842708561-ZGO3HUU3P9F24PKN1V6I/JungleBook_023B_ResUp_DC_v02logo2k.jpg" alt="" />
+                                <img className='home__movie--poster' src="https://intheposter.com/cdn/shop/files/the-manager-in-the-poster-1.jpg?v=1733910535" alt="" />
                             </div>
                         </div>
                     </div>

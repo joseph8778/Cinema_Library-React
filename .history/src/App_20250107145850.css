@@ -377,7 +377,7 @@ footer{
     border-radius: 5px;
     flex: 1 1 calc(20% - 24px); 
     max-width: 125px;
-    max-height: 174px; 
+     
     box-sizing: border-box; 
 }
 
