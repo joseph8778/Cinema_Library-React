@@ -125,7 +125,6 @@ const Directory = () => {
                            <>
                         <h1 className={styles.page__number}>Page: {page}</h1>
                             <Button 
-                            className='nextPage_btn'
                             colorPalette="red" 
                             variant="solid"
                             onClick={() => setPage(page + 1)}

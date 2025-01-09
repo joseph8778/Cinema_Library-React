@@ -112,7 +112,7 @@ const Directory = () => {
                     <div className={styles.page__buttons__wrapper}>
                         {page === 1 ? (<><div></div></>) : (
                             <Button 
-                            className='prevPage_btn'
+                            className=''
                             colorPalette="red" 
                             variant="solid"
                             onClick={() => setPage(page - 1)}
@@ -125,7 +125,6 @@ const Directory = () => {
                            <>
                         <h1 className={styles.page__number}>Page: {page}</h1>
                             <Button 
-                            className='nextPage_btn'
                             colorPalette="red" 
                             variant="solid"
                             onClick={() => setPage(page + 1)}

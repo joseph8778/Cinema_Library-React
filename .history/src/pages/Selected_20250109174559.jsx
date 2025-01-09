@@ -79,7 +79,8 @@ useEffect(() => {
                             {added ? (
                             <Link to="/cart">
                                 <Button
-                                className='gotocart__btn'
+.addtocart__btn, gotocart__btn {
+                                className=''
                             colorPalette="red"
                             variant="solid"
                             >Go to cart!</Button>

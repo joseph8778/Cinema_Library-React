@@ -79,7 +79,6 @@ useEffect(() => {
                             {added ? (
                             <Link to="/cart">
                                 <Button
-                                className='gotocart__btn'
                             colorPalette="red"
                             variant="solid"
                             >Go to cart!</Button>
@@ -88,7 +87,7 @@ useEffect(() => {
                         ) : (<Button
                             colorPalette="red"
                             variant='solid'
-                            className='addtocart__btn'
+                            className=''
                             onClick={() =>{ 
                                  setAdded(true)
                                 setCart((prevCart) => {
