@@ -12,12 +12,12 @@ import { SparklesCore } from '../components/ui/sparkles';
 
 const API__URL = 'http://www.omdbapi.com/?apikey=da77d71e';
 
-const Directory = ({search, setSearch, page, setPage}) => {
+const Directory = ({search, setSearch}) => {
 
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [year, setYear] = useState([1888, 2024]);
-
+    const [page, setPage] = useState(1);
   
 
 
@@ -61,16 +61,12 @@ const Directory = ({search, setSearch, page, setPage}) => {
                         onKeyDown={(e) => {
                             if (e.key === 'Enter') {
                                 startSearch(search)
-                                setPage(1)
                             }
                         }}
                         />
                         <Link to='/search'>
                         <i className="fa-solid fa-magnifying-glass"
-                        onClick={() => {
-                            startSearch(search); 
-                            setPage(1)
-                        }}
+                        onClick={() => startSearch(search)}
                         
                         ></i>
                         </Link>

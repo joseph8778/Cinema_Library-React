@@ -12,7 +12,7 @@ import { SparklesCore } from '../components/ui/sparkles';
 
 const API__URL = 'http://www.omdbapi.com/?apikey=da77d71e';
 
-const Directory = ({search, setSearch, page, setPage}) => {
+const Directory = ({search, setSearch}) => {
 
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
