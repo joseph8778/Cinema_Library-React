@@ -72,7 +72,7 @@ useEffect(() => {
                             <h4>Total</h4>
                             <h4>${(subTotal * (1 + taxRate)).toFixed(2)}</h4>
                         </div>
-                        <Button className='checkoutButton' colorPalette="red" variant="solid">
+                        <Button className='' colorPalette="red" variant="solid">
                              Proceed to checkout
                         </Button>
                     </div>

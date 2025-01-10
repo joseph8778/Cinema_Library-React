@@ -558,7 +558,7 @@ footer{
     margin-bottom: 24px;
 }
 
-.addtocart__btn, .gotocart__btn, .checkoutButton {
+.addtocart__btn, .gotocart__btn, . {
     background-color: red;
     color: white;
 }
